@@ -1,3 +1,31 @@
+== 0.7.9 / 2008-08-06
+  * Major Enhancements
+    * Use a psuedo-priority queue for more efficient driver loop [Darrell Kresge]
+  * Bug Fixes
+    * Fix file_writable? when using chroot [github.com/eric]
+
+== 0.7.8 / 2008-07-09
+  * Bug Fixes
+    * Catch all Exceptions from HttpResponseCode condition [github.com/rliebling]
+    * Don't error out if the process went away in SlashProcPoller [Kevin Clark]
+    * Correction of Task#handle_poll to prevent crash under event registration failure conditions. [github.com/raggi]
+    * Cleaned up logging of failed e-mail sends. [github.com/raggi]
+    * Listen on 127.0.0.1 when using God as a client. [github.com/halorgium]
+  * New Behaviors
+    * clean_unix_socket [github.com/gma]
+  * New Contacts
+    * jabber [github.com/jwulff]
+    * email via sendmail [github.com/monde]
+  * Minor Enhancements
+    * chroot support [github.com/eric]
+    * Added God.log_file for the main god log, overridden by command line option. [github.com/raggi]
+    * Print groups from `god status` command if present [github.com/pdlug]
+    * Allow headers to be specified for http_response_code condition [github.com/pdlug]
+
+== 0.7.7 / 2008-06-17
+  * Bug Fixes
+    * Fix detection of proc file system [raggi]
+
 == 0.7.6 / 2008-05-13
   * Major Enhancements
     * Implement System::Process methods for Linux based on /proc [Kevin Clark]
@@ -114,7 +142,7 @@
 
 * Minor Enhancement
   * Allow extra args to pass through to config file
-  
+
 == 0.5.1 / 2007-10-08
 
 * Bug Fixes
